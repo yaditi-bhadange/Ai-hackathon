@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            position: fixed;
+        }
+        ul{
+            list-style-type: none;
+        }
+        
+        * { margin: 0; padding: 0;
+             box-sizing: border-box; 
+            } 
+    body { font-family: Arial, sans-serif; 
+        background-color: #f4f7fb; 
+            }
+             /* Header */ 
+         header { 
+                position: fixed; 
+                top: 0;
+                left: 0; 
+                width: 100%; 
+                background-color: #172554; 
+                color: white;
+                padding: 20px 50px;
+                display: flex; 
+                justify-content: space-between;
+                align-items: center; 
+                gap: 30px;
+                } /* Heading */
+    header h1 {
+                     font-size: 25px;
+                     } /* Navigation */ 
+        ul { 
+                        list-style-type: none;
+                         display: flex; 
+                         gap: 30px; 
+                        } 
+        ul a { 
+                            color: white; text-decoration: none; 
+                            font-size: 16px; 
+                        } 
+         ul a:hover
+                         { color: #93c5fd; 
+                        }
+
+        #Home {
+             padding-top: 180px;
+              text-align: center; 
+              min-height: 500px; 
+            } 
+        #Home h2 {
+             font-size: 40px;
+              color: #172554;
+               margin-bottom: 20px;
+             }
+
+        #Home p {
+             font-size: 18px;
+              line-height: 1.7; 
+              color: #64748b;
+             }
+
+        button {
+             display: block; 
+             margin: -180px auto 0;
+             padding: 14px 25px; background-color: #2563eb;
+            color: white;
+            border: none; 
+            border-radius: 8px;
+            font-size: 16px; cursor: pointer; 
+        }
+         button:hover { 
+            background-color: #1d4ed8; 
+        }
+
+
+        img{
+            width: 50px;
+            height: auto;
+            gap: 30px;
+        }
+        section{
+            background: #35537b;
+        }
+        #Home h2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="robot.jpg">
+        <h1>Ai IT Support</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Tickets</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </header>
+
+    <section id="Home">
+
+        <h2>AI IT Support Agent</h2>
+        <p>Your Smart assistant for quick It issue resolution<br>
+         Get instant help,troubleshoot common issues,or escalate<br>
+         to our human support team.</p>
+    </section>
+    <br>
+    <br>
+
+    <button>Raise It issue-></button>
+</body>
+</html>
