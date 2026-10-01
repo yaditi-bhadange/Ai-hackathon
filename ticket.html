@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise IT Issue</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    
+
+
+    <!-- MAIN CONTENT -->
+    <div class="ticket-container">
+
+        <!-- LEFT SIDE -->
+        <div class="ticket-form">
+
+            <h1>Describe Your IT Issue</h1>
+
+            <p class="subtitle">
+                Tell us what problem you are facing. Be as specific as possible.
+            </p>
+
+
+            <!-- ISSUE BOX -->
+            <textarea
+                id="issueInput"
+                placeholder="e.g. My Wi-Fi is not working, My laptop is slow, I forgot my password..."
+            ></textarea>
+
+
+            <p class="example-heading">
+                Try these examples:
+            </p>
+
+
+            <!-- EXAMPLE BUTTONS -->
+            <div class="example-buttons">
+
+                <button onclick="selectIssue('My Wi-Fi is not working')">
+                    Wi-Fi not working
+                </button>
+
+                <button onclick="selectIssue('My computer is slow')">
+                    Computer is slow
+                </button>
+
+                <button onclick="selectIssue('I forgot my password')">
+                    Forgot password
+                </button>
+
+                <button onclick="selectIssue('My printer is not working')">
+                    Printer not working
+                </button>
+
+            </div>
+
+
+           
+            <button class="submit-button" onclick="submitTicket()">
+    Submit Ticket →
+</button>
+
+        </div>
+
+
+        
+        <div class="ticket-info">
+
+            <div class="ticket-icon">
+                📋
+            </div>
+
+            <h2>Your Ticket</h2>
+
+            <p>
+                Once you submit, our AI agent will analyze your issue
+                and suggest a solution.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
