@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Agent Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+
+    <!-- MAIN -->
+    <main class="analysis-container">
+
+        <h1>AI Agent Analysis / Response</h1>
+
+
+        <!-- AI MESSAGE -->
+        <div class="ai-message">
+
+            <div class="robot">
+                🤖
+            </div>
+
+            <div class="message-box">
+                Hi! I've received your issue. Let me analyze it...
+            </div>
+
+        </div>
+
+
+        <!-- TWO CARDS -->
+        <div class="analysis-grid">
+
+
+            <!-- ISSUE DETECTED -->
+            <div class="issue-detected-card">
+
+                <div class="issue-heading">
+
+                    <div class="wifi-icon">
+                        📶
+                    </div>
+
+                    <div>
+
+                        <h2>Issue Detected</h2>
+
+                        <p class="issue-name">
+                            Wi-Fi connectivity issue
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <p class="issue-description">
+                    Your device is connected to Wi-Fi but not getting
+                    internet access.
+                </p>
+
+
+                <h3>Possible Causes</h3>
+
+                <ul>
+
+                    <li>Router or modem issue</li>
+
+                    <li>Incorrect network settings</li>
+
+                    <li>DNS problem</li>
+
+                    <li>Network outage</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- AI PROCESSING -->
+            <div class="processing-card">
+
+                <h2>
+                    I'm checking our knowledge base
+                    for the best solution...
+                </h2>
+
+
+                <div class="process-item">
+
+                    <span>✓</span>
+
+                    Searching IT guides...
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>✓</span>
+
+                    Matching with past tickets...
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span>✓</span>
+
+                    Preparing troubleshooting steps...
+
+                </div>
+
+
+                <p class="waiting-text">
+                    This may take a few seconds...
+                </p>
+
+
+                <div class="loader"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NEXT BUTTON -->
+        <div class="next-section">
+
+            <button
+                onclick="goToTroubleshooting()"
+                class="next-button">
+
+                View Troubleshooting Steps →
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function goToTroubleshooting() {
+
+            window.location.href = "troubleshooting.html";
+
+        }
+
+    </script>
+
+</body>
+</html>
