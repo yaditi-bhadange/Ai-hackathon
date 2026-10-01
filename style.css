@@ -1,0 +1,520 @@
+/* =========================
+   RAISE IT ISSUE PAGE
+   ========================= */
+
+.ticket-container {
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    gap: 25px;
+
+    max-width: 1200px;
+    margin: 45px auto;
+
+    padding: 0 25px;
+}
+
+
+/* LEFT FORM */
+
+.ticket-form {
+    background: white;
+
+    border: 1px solid #d8e5f5;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow: 0 3px 12px rgba(30, 60, 100, 0.08);
+}
+
+.ticket-form h1 {
+    font-size: 25px;
+    color: #18345c;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #6d8096;
+    font-size: 13px;
+
+    margin-bottom: 22px;
+}
+
+
+/* TEXT AREA */
+
+#issueInput {
+    width: 100%;
+    height: 125px;
+
+    resize: none;
+
+    border: 1px solid #cddceb;
+    border-radius: 9px;
+
+    padding: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    outline: none;
+}
+
+#issueInput:focus {
+    border-color: #287bdc;
+}
+
+
+/* EXAMPLES */
+
+.example-heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    color: #647b92;
+}
+
+.example-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.example-buttons button {
+    border: 1px solid #cbdff5;
+
+    background: #f1f7ff;
+
+    color: #27649b;
+
+    border-radius: 20px;
+
+    padding: 8px 13px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.example-buttons button:hover {
+    background: #dfedff;
+}
+
+
+/* SUBMIT */
+
+.submit-button {
+    margin-top: 25px;
+
+    background: #287bdc;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    padding: 12px 20px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #1767c0;
+}
+
+
+/* RIGHT TICKET CARD */
+
+.ticket-info {
+    background: #f8fbff;
+
+    border: 1px solid #d8e5f5;
+    border-radius: 12px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 330px;
+}
+
+.ticket-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.ticket-info h2 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.ticket-info p {
+    color: #6d8096;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    max-width: 220px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .ticket-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =================================
+   AI AGENT ANALYSIS PAGE
+   ================================= */
+
+.analysis-container {
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    padding: 0 25px;
+
+}
+
+
+.analysis-container > h1 {
+
+    font-size: 24px;
+
+    color: #18345c;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* AI MESSAGE */
+
+.ai-message {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.robot {
+
+    font-size: 30px;
+
+}
+
+
+.message-box {
+
+    background: white;
+
+    border: 1px solid #d8e5f5;
+
+    border-radius: 10px;
+
+    padding: 12px 18px;
+
+    font-size: 13px;
+
+    color: #445a72;
+
+}
+
+
+/* TWO CARDS */
+
+.analysis-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+/* ISSUE CARD */
+
+.issue-detected-card {
+
+    background: white;
+
+    border: 1px solid #d8e5f5;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 3px 12px rgba(30, 60, 100, 0.08);
+
+}
+
+
+.issue-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.wifi-icon {
+
+    font-size: 35px;
+
+}
+
+
+.issue-heading h2 {
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.issue-name {
+
+    font-size: 14px;
+
+    color: #3670a7;
+
+}
+
+
+.issue-description {
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #536b83;
+
+    margin-bottom: 20px;
+
+}
+
+
+.issue-detected-card h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.issue-detected-card ul {
+
+    padding-left: 20px;
+
+}
+
+
+.issue-detected-card li {
+
+    font-size: 13px;
+
+    margin-bottom: 9px;
+
+    color: #536b83;
+
+}
+
+
+/* PROCESSING CARD */
+
+.processing-card {
+
+    background: white;
+
+    border: 1px solid #d8e5f5;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 3px 12px rgba(30, 60, 100, 0.08);
+
+}
+
+
+.processing-card h2 {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+
+}
+
+
+.process-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+
+    color: #536b83;
+
+}
+
+
+.process-item span {
+
+    width: 20px;
+
+    height: 20px;
+
+    background: #35b86b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+}
+
+
+.waiting-text {
+
+    text-align: center;
+
+    color: #8295a9;
+
+    font-size: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+/* LOADER */
+
+.loader {
+
+    width: 25px;
+
+    height: 25px;
+
+    border: 3px solid #dcecff;
+
+    border-top: 3px solid #287bdc;
+
+    border-radius: 50%;
+
+    margin: 15px auto;
+
+    animation: loading 1s linear infinite;
+
+}
+
+
+@keyframes loading {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+/* NEXT BUTTON */
+
+.next-section {
+
+    text-align: right;
+
+    margin-top: 25px;
+
+}
+
+
+.next-button {
+
+    background: #287bdc;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+}
+
+
+.next-button:hover {
+
+    background: #1767c0;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .analysis-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
